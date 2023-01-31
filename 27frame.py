@@ -8,7 +8,10 @@
 
 dna = 'ATGGCCTTT'
 
-
+for i in range(len(dna)):
+	print(i, i %3, dna[i])
+	
+#variation
 """
 python3 27frame.py
 0 0 A
