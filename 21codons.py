@@ -5,9 +5,14 @@
 # Hint: use the slice operator
 
 dna = 'ATAGCGAATATCTCTCATGAGAGGGAA'
-
-
+for i in range(0, len(dna), 3):
+	print(dna[i:i+3])
 """
+for frame in range(0,3):
+	print(frame)
+	for i in range(frame, len(dna), 3):
+		print(dna[i:i+3])
+
 python3 21codons.py
 ATA
 GCG
