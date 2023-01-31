@@ -7,7 +7,21 @@
 
 # Note: this is a common interview question
 
+n=100
+b=3
+c=5
+for i in range(n):
+	if (i+1) % b==0 and (i+1) %c ==0: print("FizzBuzz")
+	elif (i+1) % b == 0: print("Fizz")
+	elif (i+1) % c == 0: print("Buzz")
+	else: print(i+1)
+	
 
+	
+	
+"""
+check if the number/3 leaves any extra 
+"""
 """
 python3 23fizzbuzz.py
 1
