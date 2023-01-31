@@ -6,9 +6,23 @@
 # Also print out how many combinations there are
 
 # Hint: if you get stuck for more than 10 minutes, get help
-
+aa =  'ACDEFGHIKLMNPQRSTVWY'
+test= 'ABCD'
+count = 0
+for i in range(len(aa)):
+	for combo in range(i+1, len(aa)):
+		print(aa[i], aa[combo])
+		print()
+		count = count +1
+print(count)
 
 """
+there are 20 amino acid letters: A C D E F G H I K L M N P Q R S T V W Y
+make the letters a string
+print nested for loop
+print first letter with each subsequent letter
+but make it so it cant go before the first letter so 
+make somethng like count = 0 and add 1 each loop
 python3 28aapairs.py
 A C
 A D
