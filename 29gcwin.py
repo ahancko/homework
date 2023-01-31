@@ -13,6 +13,16 @@
 
 seq = 'ACGACGCAGGAGGAGAGTTTCAGAGATCACGAATACATCCATATTACCCAGAGAGAG'
 w = 11
+test = 'AACTTG'
+q = 4
+
+for position in range(len(seq)-3):
+	gc = 0
+	s = seq[position:position+w]
+	for base in range(len(s)):
+		if s[base] == 'G' or s[base] == 'C':
+			gc = gc + 1
+	print(position, s, f'{gc/w:.4f}')
 
 
 """
