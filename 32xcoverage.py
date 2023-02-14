@@ -29,25 +29,27 @@ for read in range(0,readN):
 	for eachRead in range(0, readL):
 		ref[r+eachRead] += 1
 
+refNoEnds = ref[readL:-readL]
 maxC = 0
-for val in range(len(ref)):
+for val in range(len(refNoEnds)):
 	if ref[val] > maxC:
 		maxC = ref[val]
 #print(maxC)
 
 minC = ref[0]
-for val in range(len(ref)):
+for val in range(len(refNoEnds)):
 	if ref[val] < minC:
 		minC = ref[val]
 #print(minC)
 
 aveC = 0
-refNoEnds = ref[readL:-readL]
+
 for val in range(len(refNoEnds)):
 	aveC += refNoEnds[val]
 aveC = aveC/len(refNoEnds)
 #print(refNoEnds)
 print(minC, ' ', maxC, ' ', aveC)
+print(refNoEnds)
 """
 python3 32xcoverage.py 1000 100 100
 5 20 10.82375
